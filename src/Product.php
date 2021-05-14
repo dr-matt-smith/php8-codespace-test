@@ -1,5 +1,7 @@
 <?php
 
+namespace Mattsmithdev;
+
 class Product 
 {
     public function __construct(

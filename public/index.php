@@ -1,6 +1,8 @@
 <?php
 
-require_once __DIR__ . '/../src/Product.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+
+use Mattsmithdev\Product;
 
 $p1 = new Product('hammer', 9.99);
 print PHP_EOL;
