@@ -8,7 +8,23 @@ class Product
         private $name,
         private $price
     )
-    {}
+    {
+        $this->setName($name);
+    }
+
+    public function setName($name)
+    {
+        if(empty($name)){
+            throw new \Exception("empty name argument");
+        } else 
+            $this->name = $name;
+    }
+
+
+    public function getName()
+    {
+        return $this->name;
+    }
 
     public function __toString()
     {
